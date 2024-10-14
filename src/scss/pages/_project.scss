@@ -1,0 +1,50 @@
+.section {
+    scroll-margin-top: 110px;
+}
+
+.section:nth-child(2n+3) {
+    background-color: #FFF2DF;
+}
+
+.project-nav {
+    box-shadow: -4px 3px 15px #00000025;
+}
+
+.findings {
+    display: flex;
+    align-items: start;
+    column-gap: 5rem;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7.75rem;
+}
+
+.findings-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    gap: .875rem;
+    text-align: center;
+}
+
+.findings-icon {
+    display: flex;
+    align-self: center;
+    width: 4.625rem;
+    height: 4.625rem;
+}
+
+.findings-icon-rounded {
+    display: grid;
+    place-items: center;
+    align-self: center;
+    width: 4.625rem;
+    height: 4.625rem;
+    background-color: var(--body-color);
+    border-radius: 50rem;
+}
+
+.mockup-image {
+    max-width: 240px;
+}
