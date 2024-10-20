@@ -5,13 +5,16 @@
     height: var(--btn-height);
     padding: var(--btn-padding-y) var(--btn-padding-x);
     font-family: var(--btn-font-family);
+    font-size: var(--btn-font-size);
     font-weight: var(--btn-font-weight);
     color: var(--btn-color);
     text-align: center;
+    border: var(--btn-border-width) solid var(--btn-border-color);
     border-radius: var(--btn-border-radius);
     background-color: var(--btn-bg, transparent);
     white-space: nowrap;
     box-shadow: var(--btn-box-shadow);
+    cursor: pointer;
     transition: var(--btn-transition);
 
     &:hover {
