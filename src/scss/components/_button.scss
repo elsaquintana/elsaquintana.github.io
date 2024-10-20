@@ -1,0 +1,26 @@
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--btn-height);
+    padding: var(--btn-padding-y) var(--btn-padding-x);
+    font-family: var(--btn-font-family);
+    font-weight: var(--btn-font-weight);
+    color: var(--btn-color);
+    text-align: center;
+    border-radius: var(--btn-border-radius);
+    background-color: var(--btn-bg, transparent);
+    white-space: nowrap;
+    box-shadow: var(--btn-box-shadow);
+    transition: var(--btn-transition);
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--btn-hover-box-shadow);
+    }
+
+    &:active {
+        transform: translateY(6px);
+        box-shadow: none;
+    }
+}

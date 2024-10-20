@@ -1,0 +1,37 @@
+//
+// Variables
+//
+
+:root {
+    --color-white: #fff;
+    --color-primary: #c598ff;
+    --body-font-size: 1.25rem;
+    --body-color: #444343;
+    --body-bg: #fafaf0;
+    --headings-font-family: "Poppins", sans-serif;
+    --headings-font-weight: 600;
+    --h1-font-size: 3.815rem;
+    --h2-font-size: 3.051875rem;
+    --h3-font-size: 2.44375rem;
+    --h4-font-size: 1.95625rem;
+    --h5-font-size: 1.5625rem;
+    --btn-height: 3.5rem;
+    --btn-padding-x: 1.25rem;
+    --btn-padding-y: .5rem;
+    --btn-font-weight: 600;
+    --btn-border-radius: 12px;
+    --btn-transition: transform .25s ease-in-out, box-shadow .25s ease-in-out;
+    --container-padding-x: 3.75rem;
+    --container-max-width: 1540px;
+    --input-padding-y: .75rem;
+    --input-font-size: 1.25rem;
+    --input-font-weight: 600;
+    --input-color: inherit;
+    --input-bg: transparent;
+    --input-border-width: 1px;
+    --input-border-color: var(--body-color);
+    --navbar-zindex: 1010;
+    --navbar-height: 8.125rem;
+    --navbar-bg: transparent;
+    --paragraph-margin-bottom: 1.875rem;
+}
