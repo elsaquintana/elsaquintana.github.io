@@ -268,13 +268,20 @@ strong {
   position: absolute;
   left: 50%;
   bottom: 100px;
+  display: grid;
+  place-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: var(--body-color);
+  border-radius: 50rem;
   transform: translateX(-50%);
 }
 
 .person-name {
   display: flex;
   align-items: center;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   text-decoration: none;
 }
 .person-name .person-job {
@@ -359,6 +366,9 @@ strong {
 .form-control:focus {
   outline: 0;
 }
+.form-control::-moz-placeholder {
+  color: var(--input-placeholder-color);
+}
 .form-control::placeholder {
   color: var(--input-placeholder-color);
 }
@@ -375,7 +385,8 @@ textarea.form-control {
 .nav {
   display: flex;
   align-items: center;
-  column-gap: 1.5rem;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
 }
 
 .nav-item {
@@ -429,10 +440,32 @@ textarea.form-control {
   background: linear-gradient(180deg, rgb(126, 180, 243) 6%, rgb(237, 228, 244) 55%, rgb(250, 250, 240) 63%);
 }
 
+.project-vetsan .header {
+  background: linear-gradient(180deg, #7EF3EC 6%, #F4E7FF 54.5%, #FAFAF0 63.1%);
+}
+
+.image-description-img {
+  max-width: 562px;
+}
+
+.image-description-text {
+  position: absolute;
+  top: 25%;
+}
+
+.image-description-text-start {
+  left: 0;
+}
+
+.image-description-text-end {
+  right: 0;
+}
+
 .findings {
   display: flex;
   align-items: start;
-  column-gap: 5rem;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
   max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
@@ -468,6 +501,10 @@ textarea.form-control {
   max-width: 240px;
 }
 
+.mockup-image-lg {
+  max-width: 480px;
+}
+
 .visually-hidden {
   width: 1px !important;
   height: 1px !important;
@@ -480,6 +517,14 @@ textarea.form-control {
 }
 .visually-hidden:not(caption) {
   position: absolute !important;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
 }
 
 .position-sticky {
@@ -554,8 +599,14 @@ textarea.form-control {
   gap: 4.125rem;
 }
 
+.column-gap-3 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+
 .column-gap-7 {
-  column-gap: 7.75rem;
+  -moz-column-gap: 7.75rem;
+       column-gap: 7.75rem;
 }
 
 .row-gap-2 {
@@ -568,6 +619,10 @@ textarea.form-control {
 
 .w-100 {
   width: 100%;
+}
+
+.mt-3 {
+  margin-top: 2.5rem;
 }
 
 .mb-0 {

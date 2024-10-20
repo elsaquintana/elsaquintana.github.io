@@ -17,6 +17,29 @@
     }
 }
 
+.project-vetsan {
+    .header {
+        background: linear-gradient(180deg, #7EF3EC 6%, #F4E7FF 54.5%, #FAFAF0 63.1%);
+    }
+}
+
+.image-description-img {
+    max-width: 562px;
+}
+
+.image-description-text {
+    position: absolute;
+    top: 25%;
+}
+
+.image-description-text-start {
+    left: 0;
+}
+
+.image-description-text-end {
+    right: 0;
+}
+
 .findings {
     display: flex;
     align-items: start;
@@ -54,4 +77,8 @@
 
 .mockup-image {
     max-width: 240px;
+}
+
+.mockup-image-lg {
+    max-width: 240px*2;
 }

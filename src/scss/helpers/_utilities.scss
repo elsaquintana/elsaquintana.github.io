@@ -2,6 +2,14 @@
 // Utilities
 //
 
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
 .position-sticky {
     position: sticky;
 }
@@ -74,6 +82,10 @@
     gap: 4.125rem;
 }
 
+.column-gap-3 {
+    column-gap: 2.5rem;
+}
+
 .column-gap-7 {
     column-gap: 7.75rem;
 }
@@ -88,6 +100,10 @@
 
 .w-100 {
     width: 100%;
+}
+
+.mt-3 {
+    margin-top: 2.5rem;
 }
 
 .mb-0 {
