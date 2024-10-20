@@ -15,14 +15,6 @@
     .header {
         background: linear-gradient(180deg, rgba(126,180,243,1) 6%, rgba(237,228,244,1) 55%, rgba(250,250,240,1) 63%);
     }
-
-    .btn-primary {
-        --btn-color: var(--body-color);
-        --btn-bg: rgba(237,228,244,1);
-        --btn-box-shadow: 0 6px 0 0 #{darken(rgba(237,228,244,1), 20%)};
-        --btn-hover-box-shadow: 0 9px 0 0 #{darken(rgba(237,228,244,1), 20%)};
-        --btn-active-box-shadow: 0 9px 0 0 #{darken(rgba(237,228,244,1), 20%)};
-    }
 }
 
 .findings {
