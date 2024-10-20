@@ -24,7 +24,8 @@
             transition: width .25s ease-in-out;
         }
     
-        &:hover::before {
+        &:hover::before,
+        &.active::before {
             width: 100%;
         }
     }
