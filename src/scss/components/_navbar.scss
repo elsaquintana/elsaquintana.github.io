@@ -1,13 +1,19 @@
 .navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: var(--navbar-zindex);
     display: flex;
+    justify-content: center;
     align-items: center;
     height: var(--navbar-height);
     background-color: var(--navbar-bg);
+
+    @media screen and (min-width: 1063px) {
+        --navbar-height: 8.125rem;
+        --navbar-margin-bottom: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: var(--navbar-zindex);
+    }
 
     .nav-item {
         position: relative;

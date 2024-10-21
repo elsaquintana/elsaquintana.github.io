@@ -3,5 +3,9 @@
 //
 
 .footer {
-    padding-block: 80px;
+    padding-block: 1.5rem;
+
+    @media screen and (min-width: 1063px) {
+        padding-block: 5rem;
+    }
 }
