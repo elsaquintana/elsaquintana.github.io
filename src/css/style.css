@@ -285,10 +285,15 @@ strong {
   text-decoration: none;
 }
 .person-name .person-job {
-  opacity: 0;
-  font-size: 0.875rem;
-  transform: translateX(-10%);
-  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+  display: none;
+}
+@media screen and (min-width: 1063px) {
+  .person-name .person-job {
+    opacity: 0;
+    font-size: 0.875rem;
+    transform: translateX(-10%);
+    transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+  }
 }
 .person-name:hover .person-job {
   opacity: 1;
@@ -442,6 +447,10 @@ textarea.form-control {
 
 .project-vetsan .header {
   background: linear-gradient(180deg, #7EF3EC 6%, #F4E7FF 54.5%, #FAFAF0 63.1%);
+}
+
+.project-cakeseable .header {
+  background: linear-gradient(180deg, #FBC8DD 6%, #F2E6ED 34.6%, #FAFAF0 63.1%);
 }
 
 .image-description-img {
@@ -617,12 +626,24 @@ textarea.form-control {
   row-gap: 7.75rem;
 }
 
+.w-50 {
+  width: 50%;
+}
+
 .w-100 {
   width: 100%;
 }
 
 .mt-3 {
   margin-top: 2.5rem;
+}
+
+.mt-6 {
+  margin-top: 5rem;
+}
+
+.mt-7 {
+  margin-top: 7.75rem;
 }
 
 .mb-0 {
