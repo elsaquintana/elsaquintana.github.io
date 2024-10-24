@@ -3,11 +3,12 @@
     justify-content: center;
     align-items: center;
     height: var(--navbar-height);
-    background-color: var(--navbar-bg);
 
     @media screen and (min-width: 1063px) {
         --navbar-height: 8.125rem;
         --navbar-margin-bottom: 0;
+        --navbar-bg: transparent;
+
         position: absolute;
         top: 0;
         left: 0;
@@ -34,5 +35,13 @@
         &.active::before {
             width: 100%;
         }
+    }
+}
+
+.navbar-home {
+    background-color: var(--navbar-bg);
+    
+    @media screen and (min-width: 1063px) {
+        --navbar-bg: transparent;
     }
 }

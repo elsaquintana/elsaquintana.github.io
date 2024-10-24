@@ -3,8 +3,8 @@
 //
 
 body {
-    font-family: "Poppins", sans-serif;
-    font-size: 1rem;
+    font-family: var(--body-font-family);
+    font-size: var(--body-font-size);
     font-weight: 500;
     font-style: normal;
     color: var(--body-color);
@@ -12,8 +12,17 @@ body {
     background-color: var(--body-bg);
 
     @media screen and (min-width: 1063px) {
-        font-size: var(--body-font-size);
-        font-weight: 600;
+        --body-font-size: 1.25rem;
+    }
+}
+
+.display-1 {
+    font-size: var(--h5-font-size);
+    line-height: 1.5;
+    
+    @media screen and (min-width: 1063px) {
+        font-size: var(--h1-font-size);
+        line-height: 1.15;
     }
 }
 
@@ -41,11 +50,11 @@ h1,
 
 h2,
 .h2 {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     line-height: 1.5;
 
     @media screen and (min-width: 1063px) {
-        font-size: var(--h1-font-size);
+        font-size: var(--h2-font-size);
         line-height: 1.15;
     }
 }
@@ -58,16 +67,22 @@ h3,
 
 h4,
 .h4 {
-    font-size: var(--h4-font-size);
-    line-height: 1.15;
+    font-size: 1.5rem;
+    line-height: 1.5;
+
+    @media screen and (min-width: 1063px) {
+        font-size: var(--h4-font-size);
+        line-height: 1.15;
+    }
 }
 
 h5,
 .h5 {
-    font-size: .875rem;
+    font-size: 1.125rem;
     line-height: 1.5;
 
     @media screen and (min-width: 1063px) {
+        margin-bottom: .75rem;
         font-size: var(--h5-font-size);
         line-height: 1.15;
     }

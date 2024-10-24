@@ -18,6 +18,10 @@
     &::placeholder {
         color: var(--input-placeholder-color);
     }
+
+    @media screen and (min-width: 1063px) {
+        --input-font-size: 1.25rem;
+    }
 }
 
 textarea.form-control {

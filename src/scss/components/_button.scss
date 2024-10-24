@@ -26,6 +26,11 @@
         transform: translateY(6px);
         box-shadow: none;
     }
+
+    @media screen and (min-width: 1063px) {
+        --btn-height: 3.5rem;
+        --btn-font-size: 1.25rem;
+    }
 }
 
 .btn-primary {

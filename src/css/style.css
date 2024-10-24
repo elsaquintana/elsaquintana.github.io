@@ -1,7 +1,8 @@
 :root {
   --color-white: #fff;
   --color-primary: #c598ff;
-  --body-font-size: 1.25rem;
+  --body-font-family: "Poppins", sans-serif;
+  --body-font-size: 1rem;
   --body-color: #444343;
   --body-bg: #fafaf0;
   --headings-font-family: "Poppins", sans-serif;
@@ -11,10 +12,11 @@
   --h3-font-size: 2.44375rem;
   --h4-font-size: 1.95625rem;
   --h5-font-size: 1.5625rem;
-  --btn-height: 3.5rem;
+  --btn-height: 2.75rem;
   --btn-padding-x: 1.25rem;
   --btn-padding-y: .5rem;
-  --btn-font-size: 1.25rem;
+  --btn-font-family: "Poppins", sans-serif;
+  --btn-font-size: 1rem;
   --btn-font-weight: 600;
   --btn-border-width: 0;
   --btn-border-color: transparent;
@@ -23,7 +25,7 @@
   --container-padding-x: 1.125rem;
   --container-max-width: 1540px;
   --input-padding-y: .75rem;
-  --input-font-size: 1.25rem;
+  --input-font-size: 1rem;
   --input-font-weight: 600;
   --input-color: inherit;
   --input-bg: transparent;
@@ -180,8 +182,8 @@ table {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
   font-weight: 500;
   font-style: normal;
   color: var(--body-color);
@@ -190,8 +192,18 @@ body {
 }
 @media screen and (min-width: 1063px) {
   body {
-    font-size: var(--body-font-size);
-    font-weight: 600;
+    --body-font-size: 1.25rem;
+  }
+}
+
+.display-1 {
+  font-size: var(--h5-font-size);
+  line-height: 1.5;
+}
+@media screen and (min-width: 1063px) {
+  .display-1 {
+    font-size: var(--h1-font-size);
+    line-height: 1.15;
   }
 }
 
@@ -221,13 +233,13 @@ h1,
 
 h2,
 .h2 {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   line-height: 1.5;
 }
 @media screen and (min-width: 1063px) {
   h2,
   .h2 {
-    font-size: var(--h1-font-size);
+    font-size: var(--h2-font-size);
     line-height: 1.15;
   }
 }
@@ -240,18 +252,26 @@ h3,
 
 h4,
 .h4 {
-  font-size: var(--h4-font-size);
-  line-height: 1.15;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+@media screen and (min-width: 1063px) {
+  h4,
+  .h4 {
+    font-size: var(--h4-font-size);
+    line-height: 1.15;
+  }
 }
 
 h5,
 .h5 {
-  font-size: 0.875rem;
+  font-size: 1.125rem;
   line-height: 1.5;
 }
 @media screen and (min-width: 1063px) {
   h5,
   .h5 {
+    margin-bottom: 0.75rem;
     font-size: var(--h5-font-size);
     line-height: 1.15;
   }
@@ -360,6 +380,14 @@ strong {
     padding-block: 5rem;
   }
 }
+.footer .h5 {
+  font-size: 0.875;
+}
+@media screen and (min-width: 1063px) {
+  .footer .h5 {
+    font-size: var(--h5-font-size);
+  }
+}
 
 .btn {
   display: inline-flex;
@@ -387,6 +415,12 @@ strong {
 .btn:active {
   transform: translateY(6px);
   box-shadow: none;
+}
+@media screen and (min-width: 1063px) {
+  .btn {
+    --btn-height: 3.5rem;
+    --btn-font-size: 1.25rem;
+  }
 }
 
 .btn-primary {
@@ -439,6 +473,11 @@ strong {
 .form-control::placeholder {
   color: var(--input-placeholder-color);
 }
+@media screen and (min-width: 1063px) {
+  .form-control {
+    --input-font-size: 1.25rem;
+  }
+}
 
 textarea.form-control {
   resize: none;
@@ -471,12 +510,12 @@ textarea.form-control {
   justify-content: center;
   align-items: center;
   height: var(--navbar-height);
-  background-color: var(--navbar-bg);
 }
 @media screen and (min-width: 1063px) {
   .navbar {
     --navbar-height: 8.125rem;
     --navbar-margin-bottom: 0;
+    --navbar-bg: transparent;
     position: absolute;
     top: 0;
     left: 0;
@@ -502,6 +541,15 @@ textarea.form-control {
   width: 100%;
 }
 
+.navbar-home {
+  background-color: var(--navbar-bg);
+}
+@media screen and (min-width: 1063px) {
+  .navbar-home {
+    --navbar-bg: transparent;
+  }
+}
+
 .section {
   scroll-margin-top: 110px;
 }
@@ -513,10 +561,26 @@ textarea.form-control {
 .project-nav {
   box-shadow: -4px 3px 15px rgba(0, 0, 0, 0.1450980392);
   z-index: 1000;
+  display: none;
+}
+@media screen and (min-width: 1063px) {
+  .project-nav {
+    display: block;
+  }
 }
 
+.project-sango .navbar {
+  background: #7EB4F3;
+}
+@media screen and (min-width: 1063px) {
+  .project-sango .navbar {
+    background-color: transparent;
+  }
+}
 .project-sango .header {
-  background: linear-gradient(180deg, rgb(126, 180, 243) 6%, rgb(237, 228, 244) 55%, rgb(250, 250, 240) 63%);
+  background: linear-gradient(180deg, #7EB4F3 6%, #EDE4F4 54.5%, #FAFAF0 63.1%);
+  padding-bottom: 1.75rem;
+  margin-bottom: 0;
 }
 
 .project-vetsan .header {
@@ -546,13 +610,21 @@ textarea.form-control {
 
 .findings {
   display: flex;
-  align-items: start;
-  -moz-column-gap: 5rem;
-       column-gap: 5rem;
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 7.75rem;
+  flex-direction: column;
+  row-gap: 3rem;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 1063px) {
+  .findings {
+    align-items: start;
+    flex-direction: row;
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7.75rem;
+  }
 }
 
 .findings-item {
@@ -626,6 +698,16 @@ textarea.form-control {
   display: grid;
 }
 
+.d-none {
+  display: none;
+}
+
+@media screen and (min-width: 1063px) {
+  .d-md-block {
+    display: block;
+  }
+}
+
 .justify-content-center {
   justify-content: center;
 }
@@ -642,6 +724,10 @@ textarea.form-control {
 
 .align-items-center {
   align-items: center;
+}
+
+.align-self-start {
+  align-self: start;
 }
 
 .flex-1 {
@@ -702,9 +788,18 @@ textarea.form-control {
   gap: 4.125rem;
 }
 
+.gap-7 {
+  gap: 7.75rem;
+}
+
 .column-gap-3 {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
+}
+
+.column-gap-5 {
+  -moz-column-gap: 4.125rem;
+       column-gap: 4.125rem;
 }
 
 .column-gap-7 {
@@ -714,6 +809,10 @@ textarea.form-control {
 
 .row-gap-2 {
   row-gap: 1.25rem;
+}
+
+.row-gap-2-5 {
+  row-gap: 1.75rem;
 }
 
 .row-gap-7 {
@@ -748,16 +847,38 @@ textarea.form-control {
   margin-bottom: 0.75rem;
 }
 
+@media screen and (min-width: 1063px) {
+  .mb-lg-1 {
+    margin-bottom: 0.75rem;
+  }
+}
+
 .mb-2 {
   margin-bottom: 1.25rem;
+}
+
+.mb-2-5 {
+  margin-bottom: 1.75rem;
 }
 
 .mb-3 {
   margin-bottom: 2.5rem;
 }
 
+@media screen and (min-width: 1063px) {
+  .mb-lg-3 {
+    margin-bottom: 2.5rem;
+  }
+}
+
 .mb-4 {
   margin-bottom: 3.5rem;
+}
+
+@media screen and (min-width: 1063px) {
+  .mb-lg-4 {
+    margin-bottom: 3.5rem;
+  }
 }
 
 .mb-5 {
@@ -768,8 +889,24 @@ textarea.form-control {
   margin-bottom: 5rem;
 }
 
+@media screen and (min-width: 1063px) {
+  .mb-lg-6 {
+    margin-bottom: 5rem;
+  }
+}
+
 .mb-7 {
   margin-bottom: 7.75rem;
+}
+
+@media screen and (min-width: 1063px) {
+  .mb-lg-7 {
+    margin-bottom: 7.75rem;
+  }
+}
+
+.px-0 {
+  padding-inline: 0;
 }
 
 .py-3 {
@@ -780,8 +917,18 @@ textarea.form-control {
   padding-block: 4.125rem;
 }
 
+.pt-2-5 {
+  padding-top: 1.75rem;
+}
+
 .pt-8 {
   padding-top: 11.5625rem;
+}
+
+@media screen and (min-width: 1063px) {
+  .pt-lg-8 {
+    padding-top: 11.5625rem;
+  }
 }
 
 @media screen and (min-width: 1063px) {
@@ -794,12 +941,23 @@ textarea.form-control {
   font-size: var(--h6-font-size);
 }
 
+.object-fit-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .text-start {
   text-align: left;
 }
 
 .text-center {
   text-align: center;
+}
+
+@media screen and (min-width: 1063px) {
+  .text-lg-center {
+    text-align: center;
+  }
 }
 
 .text-nowrap {
