@@ -33,8 +33,18 @@
 }
 
 .project-vetsan {
+    .navbar {
+        background: #7EF3EC;
+
+        @media screen and (min-width: 1063px) {
+            background-color: transparent;
+        }
+    }
+
     .header {
         background: linear-gradient(180deg, #7EF3EC 6%, #F4E7FF 54.5%, #FAFAF0 63.1%);
+        padding-bottom: 1.75rem;
+        margin-bottom: 0;
     }
 }
 
@@ -104,9 +114,13 @@
 }
 
 .mockup-image {
-    max-width: 240px;
+    @media screen and (min-width: 1063px) {
+        max-width: 240px;
+    }
 }
 
 .mockup-image-lg {
-    max-width: 240px*2;
+    @media screen and (min-width: 1063px) {
+        max-width: 240px*2;
+    }
 }

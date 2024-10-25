@@ -152,8 +152,18 @@
     width: 100%;
 }
 
+.mt-0 {
+    margin-top: 0;
+}
+
 .mt-3 {
     margin-top: 2.5rem;
+}
+
+.mt-lg-3 {
+    @media screen and (min-width: 1063px) {
+        margin-top: 2.5rem;
+    }
 }
 
 .mt-6 {

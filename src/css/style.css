@@ -583,8 +583,18 @@ textarea.form-control {
   margin-bottom: 0;
 }
 
+.project-vetsan .navbar {
+  background: #7EF3EC;
+}
+@media screen and (min-width: 1063px) {
+  .project-vetsan .navbar {
+    background-color: transparent;
+  }
+}
 .project-vetsan .header {
   background: linear-gradient(180deg, #7EF3EC 6%, #F4E7FF 54.5%, #FAFAF0 63.1%);
+  padding-bottom: 1.75rem;
+  margin-bottom: 0;
 }
 
 .project-cakeseable .header {
@@ -652,12 +662,16 @@ textarea.form-control {
   border-radius: 50rem;
 }
 
-.mockup-image {
-  max-width: 240px;
+@media screen and (min-width: 1063px) {
+  .mockup-image {
+    max-width: 240px;
+  }
 }
 
-.mockup-image-lg {
-  max-width: 480px;
+@media screen and (min-width: 1063px) {
+  .mockup-image-lg {
+    max-width: 480px;
+  }
 }
 
 .visually-hidden {
@@ -827,8 +841,18 @@ textarea.form-control {
   width: 100%;
 }
 
+.mt-0 {
+  margin-top: 0;
+}
+
 .mt-3 {
   margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 1063px) {
+  .mt-lg-3 {
+    margin-top: 2.5rem;
+  }
 }
 
 .mt-6 {
