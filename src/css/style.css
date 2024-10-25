@@ -299,6 +299,16 @@ strong {
   font-weight: 600;
 }
 
+ul,
+ol {
+  padding-left: var(--container-padding-x);
+  list-style-position: outside;
+}
+ul li:not(:last-child),
+ol li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
 .list-unstyled {
   list-style: none;
 }
