@@ -597,8 +597,18 @@ textarea.form-control {
   margin-bottom: 0;
 }
 
+.project-cakeseable .navbar {
+  background: #FBC8DD;
+}
+@media screen and (min-width: 1063px) {
+  .project-cakeseable .navbar {
+    background-color: transparent;
+  }
+}
 .project-cakeseable .header {
   background: linear-gradient(180deg, #FBC8DD 6%, #F2E6ED 34.6%, #FAFAF0 63.1%);
+  padding-bottom: 1.75rem;
+  margin-bottom: 0;
 }
 
 .image-description-img {
@@ -708,6 +718,12 @@ textarea.form-control {
   display: flex;
 }
 
+@media screen and (min-width: 1063px) {
+  .d-lg-flex {
+    display: flex;
+  }
+}
+
 .d-grid {
   display: grid;
 }
@@ -717,7 +733,7 @@ textarea.form-control {
 }
 
 @media screen and (min-width: 1063px) {
-  .d-md-block {
+  .d-lg-block {
     display: block;
   }
 }
@@ -794,8 +810,18 @@ textarea.form-control {
   gap: 0.75rem;
 }
 
+.gap-2 {
+  gap: 1.25rem;
+}
+
 .gap-4 {
   gap: 3.5rem;
+}
+
+@media screen and (min-width: 1063px) {
+  .gap-lg-4 {
+    gap: 3.5rem;
+  }
 }
 
 .gap-5 {
@@ -829,12 +855,22 @@ textarea.form-control {
   row-gap: 1.75rem;
 }
 
+.row-gap-3 {
+  row-gap: 2.5rem;
+}
+
 .row-gap-7 {
   row-gap: 7.75rem;
 }
 
 .w-50 {
   width: 50%;
+}
+
+@media screen and (min-width: 1063px) {
+  .w-lg-50 {
+    width: 50%;
+  }
 }
 
 .w-100 {

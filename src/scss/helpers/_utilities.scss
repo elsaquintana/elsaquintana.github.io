@@ -22,6 +22,12 @@
     display: flex;
 }
 
+.d-lg-flex {
+    @media screen and (min-width: 1063px) {
+        display: flex;
+    }
+}
+
 .d-grid {
     display: grid;
 }
@@ -30,7 +36,7 @@
     display: none;
 }
 
-.d-md-block {
+.d-lg-block {
     @media screen and (min-width: 1063px) {
         display: block;
     }
@@ -108,8 +114,18 @@
     gap: .75rem;
 }
 
+.gap-2 {
+    gap: 1.25rem;
+}
+
 .gap-4 {
     gap: 3.5rem;
+}
+
+.gap-lg-4 {
+    @media screen and (min-width: 1063px) {
+        gap: 3.5rem;
+    }
 }
 
 .gap-5 {
@@ -140,12 +156,22 @@
     row-gap: 1.75rem;
 }
 
+.row-gap-3 {
+    row-gap: 2.5rem;
+}
+
 .row-gap-7 {
     row-gap: 7.75rem;
 }
 
 .w-50 {
     width: 50%;
+}
+
+.w-lg-50 {
+    @media screen and (min-width: 1063px) {
+        width: 50%;
+    }
 }
 
 .w-100 {

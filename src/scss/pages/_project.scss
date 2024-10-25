@@ -49,8 +49,18 @@
 }
 
 .project-cakeseable {
+    .navbar {
+        background: #FBC8DD;
+
+        @media screen and (min-width: 1063px) {
+            background-color: transparent;
+        }
+    }
+
     .header {
         background: linear-gradient(180deg, #FBC8DD 6%, #F2E6ED 34.6%, #FAFAF0 63.1%);
+        padding-bottom: 1.75rem;
+        margin-bottom: 0;
     }
 }
 
