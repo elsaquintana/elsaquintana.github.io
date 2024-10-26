@@ -8,7 +8,10 @@ function handleFormSubmission(formId) {
         // Use fetch to send form data to the server
         fetch(actionUrl, {
             method: 'POST',
-            body: formData
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
         })
         .then(response => {
             if (response.ok) {
